@@ -23,8 +23,8 @@ def run():
 			if qInfo is not None:
 				globalList.append(qInfo)
 			answers = question.get("answers", [])
-			for answerlo in answers:
-				aInfo = formatPost(question)
+			for answer in answers:
+				aInfo = formatPost(answer)
 				if aInfo is not None:
 					globalList.append(aInfo)
 
