@@ -19,7 +19,9 @@ class BitcointalkSpider(scrapy.Spider):
     start_urls = (
         #'https://bitcointalk.org/index.php?board=241.0', # Arabic
         #'https://bitcointalk.org/index.php?board=7.0', # Economics
-        'https://bitcointalk.org/index.php?board=5.0', # Marketplace
+        #'https://bitcointalk.org/index.php?board=1.0', # General
+        'https://bitcointalk.org/index.php?board=8.0', #trade
+        # 5.0 Marketplace
         #'https://bitcointalk.org/index.php?board=57.0',
     )
 

@@ -94,15 +94,18 @@ def scrape_user(user, number_to_scrape=1000000):
 def load():
 	return pickle.load(open( "save.p", "rb" ))
 
-'''a = load()
-listOfAddresses = []
-for i in a:
-	listOfAddresses.extend(i[1])
+loading = True
+if loading:
+	a = load()
+	listOfAddresses = []
+	for i in a:
+		listOfAddresses.extend(i[1])
 
-print(set(listOfAddresses))
-print(len(set(listOfAddresses)))
-'''
-scrape_subreddit(btc_sub, number_to_scrape=1000000)
+	print(set(listOfAddresses))
+	print(len(set(listOfAddresses)))
+	
+else:
+	scrape_subreddit(btc_sub, number_to_scrape=1000000)
 
 #(1508290281.0, 2)
 #(1507920729.0, 1635)

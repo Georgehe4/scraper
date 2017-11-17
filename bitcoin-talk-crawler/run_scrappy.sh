@@ -1,1 +1,1 @@
-scrapy crawl bitcointalk -s JOBDIR=crawls/bitcointalk-1
+scrapy crawl bitcointalk -s JOBDIR=crawls/8run
